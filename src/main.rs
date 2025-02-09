@@ -53,7 +53,7 @@ fn main() {
             }
         },
         Err(err) => {
-            eprintln!("[-] Error when reading file {} : {}", filename, err);
+            eprintln!("[-] Error when reading the file {} : {}", filename, err);
             process::exit(1);
         }
     }      
