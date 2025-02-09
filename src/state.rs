@@ -1,10 +1,10 @@
-pub struct ScriptState {
+pub struct State {
     cells: Vec<u8>,
     cell_index: usize,    
 }
 
-impl ScriptState {
-    fn new() -> Self {
+impl State {
+    pub fn new() -> Self {
         let mut cells: Vec<u8> = Vec::new();        
         cells.push(0);        
         Self {

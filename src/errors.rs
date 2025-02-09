@@ -1,12 +1,12 @@
 use std::fmt;
 
 #[derive(Debug)]
-struct SyntaxError {
+pub struct SyntaxError {
     details: String
 }
 
 impl SyntaxError {
-    fn new(details: String) -> Self {
+    pub fn new(details: String) -> Self {
         Self { details }
     }
 }
